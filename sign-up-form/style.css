@@ -224,4 +224,8 @@ a {
   .hero-header img {
     width: 35vw;
   }
+
+  .hero-image-credit {
+    display: none;
+  }
 }
