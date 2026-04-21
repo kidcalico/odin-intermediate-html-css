@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Love Ya Like A Sister";
+  src: 
+    url("lib/love-ya-like-a-sister/loveyalikeasister-regular.woff2") format("woff2"),
+    url("lib/love-ya-like-a-sister/loveyalikeasister-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +20,20 @@
   --secondary-background: #f3f9f4;
   --hero-background: url("./lib/kristaps-solims-g6is2Vvc6VI-unsplash.jpg");
   --primary-header-size: clamp();
-  --secondary-header-size: clamp(1rem, 1.5vw, 2rem);
+  --secondary-header-size: clamp(1rem, 2vw, 2rem);
+  --email-pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Futura, Arial, sans-serif;
   font-size: 10px;
   display: flex;
   flex-direction: row;
+}
+
+h1, 
+.content-header {
+  font-family: "Love Ya Like A Sister", Georgia, 'Times New Roman', Times, serif;
 }
 
 a {
@@ -39,7 +55,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: var(--hero-background);
   background-size: cover;
   height: 100vh;
@@ -51,7 +67,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 20vh;
+  top: 10vh;
   height: 20vh;
   width: 100%;
   padding: 10px;
@@ -63,7 +79,7 @@ a {
 }
 
 .hero-header h1 {
-  min-width: 15vw;
+  width: 15vw;
 }
 
 .hero-image-credit {
@@ -92,17 +108,26 @@ a {
 }
 
 .content-header {
-  padding: 75px 20%;
+  padding: 75px 7vw;
   font-size: var(--secondary-header-size);
   font-weight: bold;
-  flex: 2;
+  flex: 1;
+  hanging-punctuation: first;
+}
+
+.content-header p:first-child {
+  text-indent: -0.5em;
+}
+
+.content-header p {
+  margin: 2.5vh;
 }
 
 .form-container {
   position: relative;
   /* top: 10vh; */
-  flex: 2;
-  height: 2vh;
+  flex: 1;
+  /* height: 2vh; */
   background: var(--secondary-background);
   padding: 20px 10%;
   box-shadow: 0px 3px 3px rgb(134, 134, 134);
@@ -117,8 +142,22 @@ a {
 
 }
 
+.form label {
+  /* display: block;
+  margin-bottom: 5px; */
+}
+
 .form input {
-  width: 20vw;
+  padding: 5px;
+  box-shadow: inset -1px 1px 5px grey;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form input:focus {
+  
 }
 
 .form-row {
@@ -129,33 +168,66 @@ a {
 }
 
 .form-item {
+  width: 180px;
   display: flex;
   flex-direction: column;
+  gap: 3px;
+  font-variant: small-caps;
 }
 
-input::before {
-  
+.form input:focus {
+  outline: 1px solid steelblue;
+  box-shadow: 2px 2px 5px rgb(115, 115, 115);
+}
+
+.form input:user-invalid {
+  border: 2px dashed crimson;
 }
 
 .call-to-action {
   flex: 1;
   display: block;
-  margin: auto;
-  padding: 40px;
+  margin: 5vh auto;
 }
 
 .call-to-action button {
-  width: 75px;
-  background-color: steelblue;
+  width: 100%;
+  background-color: darkolivegreen;
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
   border: none;
   border-radius: 5px;
-  padding: 5px;
-  margin: 10px 0;
+  padding: 10px;
+  margin: 5px 0;
 }
 
 .call-to-action button:hover {
-  background-color: green;
+  background-color: olivedrab;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex: 1;
+    height: 25vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .hero-header {
+    top: 0;
+    font-size: 3vw;
+  }
+
+  .hero-header img {
+    width: 35vw;
+  }
 }
