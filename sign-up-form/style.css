@@ -19,21 +19,24 @@
   --primary-background: #cad8cc;
   --secondary-background: #f3f9f4;
   --hero-background: url("./lib/kristaps-solims-g6is2Vvc6VI-unsplash.jpg");
-  --primary-header-size: clamp();
-  --secondary-header-size: clamp(1rem, 2vw, 2rem);
+  --primary-header-size: clamp(1.6rem, 3vw, 3rem);
+  --secondary-header-size: clamp(1.6rem, 2vw, 2.4rem);
   --email-pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
 }
 
 body {
   font-family: Futura, Arial, sans-serif;
-  font-size: 10px;
   display: flex;
   flex-direction: row;
+  line-height: 1.4;
 }
 
-h1, 
-.content-header {
+h1, p {
   font-family: "Love Ya Like A Sister", Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 a {
@@ -80,13 +83,13 @@ a {
 
 .hero-header h1 {
   width: 15vw;
+  font-size: var(--primary-header-size);
 }
 
 .hero-image-credit {
-  font-size: 10px;
+  font-size: 1rem;
   position: absolute;
-  bottom: 10px;
-  /* align-items: flex-end; */
+  bottom: 2vh;
 }
 
 .content {
@@ -108,11 +111,10 @@ a {
 }
 
 .content-header {
-  padding: 5vh 7vw;
+  padding: 5vh 5vw;
   font-size: var(--secondary-header-size);
   font-weight: bold;
   flex: 1;
-  hanging-punctuation: first;
 }
 
 .content-header p:first-child {
@@ -125,16 +127,13 @@ a {
 }
 
 .content-header p {
-  margin: 2.5vh;
+  margin: 2.5vh 0;
 }
 
 .form-container {
-  position: relative;
-  /* top: 10vh; */
   flex: 1;
-  /* height: 2vh; */
   background: var(--secondary-background);
-  padding: 20px 10%;
+  padding: 3vh 5vw;
   box-shadow: 0px 3px 3px rgb(134, 134, 134);
   clip-path: 0 -15px 0 0;
 }
@@ -142,14 +141,6 @@ a {
 .form {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
-  /* margin: 10px 30px; */
-
-}
-
-.form label {
-  /* display: block;
-  margin-bottom: 5px; */
 }
 
 .form input {
@@ -187,7 +178,8 @@ a {
 
 .call-to-action {
   flex: 1;
-  margin: 5vh auto;
+  margin: 5vh 5vw;
+  width: 180px;
 }
 
 .call-to-action button {
@@ -195,7 +187,8 @@ a {
   background-color: darkolivegreen;
   color: white;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-family: inherit;
   border: none;
   border-radius: 5px;
   padding: 10px;
