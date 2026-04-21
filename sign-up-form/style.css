@@ -108,7 +108,7 @@ a {
 }
 
 .content-header {
-  padding: 75px 7vw;
+  padding: 5vh 7vw;
   font-size: var(--secondary-header-size);
   font-weight: bold;
   flex: 1;
@@ -117,6 +117,11 @@ a {
 
 .content-header p:first-child {
   text-indent: -0.5em;
+}
+
+.content-header p:last-child {
+  position: relative;
+  left: 10vw
 }
 
 .content-header p {
@@ -154,10 +159,6 @@ a {
   border: none;
   border-radius: 5px;
   font-family: inherit;
-}
-
-.form input:focus {
-  
 }
 
 .form-row {
@@ -200,6 +201,7 @@ a {
   border-radius: 5px;
   padding: 10px;
   margin: 5px 0;
+  box-shadow: 1px 2px 2px gray;
 }
 
 .call-to-action button:hover {
