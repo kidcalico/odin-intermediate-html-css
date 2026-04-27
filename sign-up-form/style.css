@@ -200,6 +200,10 @@ a {
   background-color: olivedrab;
 }
 
+.signature {
+  align-self: center;
+}
+
 @media screen and (max-width: 500px) {
   body {
     flex-direction: column;
