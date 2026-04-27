@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  list-style: none;
+}
+
+body {
+  /* display: flex; */
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 25px;
+  /* grid-template-rows: 1fr 2fr; */
+}
+
+main {
+  background-color: gainsboro;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.projects {
+  display: grid;
+  grid-row: 1 / 3;
+}
+
+.trending {
+  grid-area: 2 / 2 ;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+  background-color: steelblue;
+  color: white;
+  padding: 20px;
+  grid-row: 1 / 7;
+}
+
+input.search-bar {
+  background-color: gainsboro;
+  border: none;
+  border-radius: 20px;
+  height: 2em;
+  width: 300px;
+}
+
+.buttons button {
+  border-radius: 20px;
+  background-color: steelblue;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+}
