@@ -51,6 +51,10 @@ main {
   margin: auto;
 }
 
+.caption a {
+  text-decoration: underline;
+}
+
 header > div,
 .quick-links a {
   display: flex;
@@ -87,6 +91,15 @@ header form {
 
 .trending {
   grid-area: 2 / 2 ;
+}
+
+.trending a {
+  display: flex;
+  gap: 10px;
+}
+
+.trending span {
+  font-weight: 900;
 }
 
 .project-cards {
@@ -126,7 +139,6 @@ h2 {
 
 .sidebar h2 {
   text-transform: uppercase;
-  /* font-variation-settings: "wdth" 200; */
 }
 
 h3 {
@@ -138,15 +150,12 @@ h3 {
 .sidebar ul {
   padding: 20px 0 0 10px;
   grid-column: 1 / 3;
-  /* display: contents; */
 }
 
 .sidebar img {
   width: 30px;
-  /* padding-right: 10px; */
 }
 
-/* .sidebar */
 .sidebar a {
   display: flex;
   align-items: center;
