@@ -10,16 +10,22 @@
   <div class="container">
     <header>
       <div class="search-bar">
-        <form action="">
-          <input type="image" src="./lib/magnify.svg" alt="Send Query" width="20px">
-          <input type="text" class="search-bar">
+        <form action="" method="get">
+          <input type="text" name="search" placeholder="Looking for something?" class="search-bar">
+          <input type="image" src="./lib/icons/magnify.svg" alt="Send Query" width="25px">
         </form>
       </div>
       <div class="quick-links">
-        <input type="image" src="./lib/bell-ring-outline.svg" alt="notifications" width="20px">
-        <a href=""><img src="" alt="" border-radius="50%" width="50px" height="50px">Name Placeholder</a>
+        <input type="image" src="./lib/icons/bell-ring.svg" alt="notifications" width="20px">
+        <a href=""><img src="./lib/profile-pic-1.jpg" alt="" class="user-image"><span>Gaal Dornick</span></a>
       </div>
-      <div class="user-info"></div>
+      <div class="user-info">
+        <img src="./lib/profile-pic-1.jpg" alt="" class="user-image">
+        <div>
+          <span>Hi there,</span>
+          <h2>Gaal (@radiant_wiz)</h2>
+        </div>
+      </div>
       <div class="buttons">
         <button>New</button>
         <button>Upload</button>
@@ -31,59 +37,172 @@
         <h3>My Projects</h3>
         <div class="project-cards">
           <div class="card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos inventore earum, autem consequuntur enim adipisci, beatae necessitatibus totam corrupti officia illum odio laboriosam? Dolorem molestias rerum ipsa eius animi.</p>
+            <h3>Prime Radiant</h3>
+            <p>Chronicling all of psychohistory, predicting the downfall of Empire.</p>
+            <div class="links">
+              <a href=""><img src="./lib/icons/star.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/eye.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/source-fork.svg" alt=""></a>
+            </div>
           </div>
           <div class="card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos inventore earum, autem consequuntur enim adipisci, beatae necessitatibus totam corrupti officia illum odio laboriosam? Dolorem molestias rerum ipsa eius animi.</p>
+            <h3>Counting Primes</h3>
+            <p>I've been counting prime numbers since I was a little girl. It helps me focus and relieves anxiety. I am now traversing trillions.</p>
+            <div class="links">
+              <a href=""><img src="./lib/icons/star.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/eye.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/source-fork.svg" alt=""></a>
+            </div>
           </div>
           <div class="card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos inventore earum, autem consequuntur enim adipisci, beatae necessitatibus totam corrupti officia illum odio laboriosam? Dolorem molestias rerum ipsa eius animi.</p>
+            <h3>The Beggar</h3>
+            <p>This is my spaceship. She's gotten me out of all kinds of sticky situations.</p>
+            <div class="links">
+              <a href=""><img src="./lib/icons/star.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/eye.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/source-fork.svg" alt=""></a>
+            </div>
           </div>
           <div class="card">
-            <h3>Super Cool Project</h3>
+            <h3>Mentalics</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos inventore earum, autem consequuntur enim adipisci, beatae necessitatibus totam corrupti officia illum odio laboriosam? Dolorem molestias rerum ipsa eius animi.</p>
+            <div class="links">
+              <a href=""><img src="./lib/icons/star.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/eye.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/source-fork.svg" alt=""></a>
+            </div>
           </div>
           <div class="card">
-            <h3>Super Cool Project</h3>
+            <h3>The Mule</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos inventore earum, autem consequuntur enim adipisci, beatae necessitatibus totam corrupti officia illum odio laboriosam? Dolorem molestias rerum ipsa eius animi.</p>
+            <div class="links">
+              <a href=""><img src="./lib/icons/star.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/eye.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/source-fork.svg" alt=""></a>
+            </div>
           </div>
           <div class="card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos inventore earum, autem consequuntur enim adipisci, beatae necessitatibus totam corrupti officia illum odio laboriosam? Dolorem molestias rerum ipsa eius animi.</p>
+            <h3>Second Foundation</h3>
+            <p>Shhh... it's a secret!</p>
+            <div class="links">
+              <a href=""><img src="./lib/icons/star.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/eye.svg" alt=""></a>
+              <a href=""><img src="./lib/icons/source-fork.svg" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="announcements">
         <h3>Announcements</h3>
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed repellendus pariatur vitae in nostrum amet</div>
+        <div class="card">
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed repellendus pariatur vitae in nostrum amet
+            </li>
+            <hr>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sed repellendus pariatur vitae in nostrum amet
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="trending">
         <h3>Trending</h3>
         <div class="card">
           <ul>
-            <li>Trending 1</li>
-            <li>Trending 2</li>
-            <li>Trending 3</li>
+            <li>
+              <a href="">
+                <img src="./lib/wizard.png" alt="" class="user-image">
+                <div>
+                  @hariseldon
+                  <span>Foundation</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./lib/beach.png" alt="" class="user-image">
+                <div>
+                  @cleon
+                  <span>What now?</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./lib/dandelion.png" alt="" class="user-image">
+                <div>
+                  @demerzel
+                  <span>Empire First</span>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+      <div class="caption">
+        <caption>Created by <a href="https://github.com/kidcalico">Kid Calico</a> for <a href="https://www.theodinproject.com/">The Odin Project</a>.</caption>
+      </div>
     </main>
     <div class="sidebar">
-      <h2>Dashboard</h2>
+      <h2><img src="./lib/icons/bulletin-board.svg" alt="dashboard">Dashboard</h2>
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
+        <li>
+          <a href="">
+            <img src="lib/icons/home-account.svg" alt="home">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="lib/icons/card-account-details.svg" alt="profile">
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/message.svg" alt="messages">
+            <span>Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/history.svg" alt="history">
+            <span>History</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/file-document-check.svg" alt="tasks">
+            <span>Tasks</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/account-group.svg" alt="communities">
+            <span>Communities</span>
+          </a>
+        </li>
       </ul>
       <ul>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/cog.svg" alt="settings">
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/face-agent.svg" alt="support">
+            <span>Support</span>    
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./lib/icons/shield-check.svg" alt="privacy">
+            <span>Privacy</span>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
